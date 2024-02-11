@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="390dp"
+        android:layout_height="165dp"
+        android:src="@drawable/lancheimg"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/app_name"
+        />
+
+    <TextView
+        android:id="@+id/Text1"
+        style="@style/EstiloTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto1"
+        android:layout_marginStart="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/EstiloTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Cliente"
+        android:layout_margin="12dp"
+        android:autofillHints="name"
+        android:inputType="text"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opção1"
+        android:layout_marginStart="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opção2"
+        android:layout_marginStart="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opção3"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/EstiloTexto"
+        android:text="@string/texto2"
+        android:layout_marginStart="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnSubtrair"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingTop="3dp"
+            android:text="@string/subtrair"
+            android:paddingHorizontal="11dp"
+            android:layout_marginStart="10dp"
+            android:onClick="subtrairQuantidade"
+            />
+
+        <TextView
+            android:id="@+id/txtQuantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Zero"
+            style="@style/EstiloTexto"
+            android:layout_marginStart="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnSomar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingTop="3dp"
+            android:text="@string/somar"
+            android:paddingHorizontal="11dp"
+            android:layout_marginStart="10dp"
+            android:textAlignment="gravity"
+            android:onClick="somarQuantidade"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResumopedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resumopedido"
+        style="@style/EstiloTexto"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtPreçoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/EstiloTexto"
+        android:layout_marginStart="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botãopedido"
+        style="@style/EstiloTexto"
+        android:layout_marginStart="10dp"
+        android:onClick="FazerPedidoEEnviar"
+        />
+
+</LinearLayout>
+</ScrollView>
